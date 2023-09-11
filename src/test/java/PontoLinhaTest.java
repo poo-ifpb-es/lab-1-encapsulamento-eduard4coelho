@@ -24,8 +24,8 @@ public class PontoLinhaTest {
 
     @Test
     void testLinha() {
-        Ponto p1 = new Ponto(4.5, 6.7);
-        Ponto p2 = new Ponto(7.8, 8.9);
+         p1 = new Ponto(4.5, 6.7);
+        Ponto p2 = new Ponto(7Ponto.8, 8.9);
 
         Linha ln = new Linha(p1, p2);
 
