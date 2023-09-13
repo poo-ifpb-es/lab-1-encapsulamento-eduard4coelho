@@ -1,4 +1,5 @@
 public class RelogioDigital{
+
     int hora;
     int minuto;
 
@@ -10,25 +11,25 @@ public class RelogioDigital{
         this.hora = hora;
     }
     public int getMinuto() {
-        return minuto;
+        return this.minuto;
     }
     public void setMinuto(int minuto) {
         this.minuto = minuto;
     }
-    public RelogioDigital(int hora, int minuto) {
+    public RelogioDigital(){
         this.hora = 12;
-        this.hora = 20;
+        this.minuto = 20;
     }
 
     public void tick(){
-        if (minuto>59){
-            hora+=1;
+        this.minuto += 1;
 
-        }else if(minuto<59){
-            minuto+=1;
+        if(this.minuto>59){
+            this.hora++;
+            this.minuto = 0;
 
-        }else if(hora<23){
-            hora = 0;
+        }if(this.hora>23){
+            this.hora = 0;
         }
         
     }

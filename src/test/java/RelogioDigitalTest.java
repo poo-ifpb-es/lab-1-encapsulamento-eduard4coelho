@@ -19,6 +19,9 @@ public class RelogioDigitalTest {
         }
     }
 
+    /**
+     * 
+     */
     @org.junit.jupiter.api.Test
     void testTickViraHora() {
         RelogioDigital relogio = new RelogioDigital();
@@ -34,8 +37,11 @@ public class RelogioDigitalTest {
 
         relogio.tick();
 
-        assertEquals(0, relogio.getMinuto());
+        extracted(relogio);
         assertEquals(2, relogio.getHora());
+    }
+    private void extracted(RelogioDigital relogio) {
+        assertEquals(0, relogio.getMinuto());
     }
 
     @org.junit.jupiter.api.Test
@@ -53,7 +59,7 @@ public class RelogioDigitalTest {
 
         relogio.tick();
 
-        assertEquals(0, relogio.getMinuto());
+        extracted(relogio);
         assertEquals(0, relogio.getHora());
     }
 }

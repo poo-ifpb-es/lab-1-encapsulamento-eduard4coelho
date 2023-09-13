@@ -23,9 +23,11 @@ public class Linha {
         this.inicio = inicio;
         this.fim = fim;
     }
-    
+
     public double getComprimento(){
-        
+    
+        double comprimento = Math.sqrt((Math.pow(fim.getX()-(inicio.getX()),2))+(Math.pow(fim.getY()-(inicio.getY()), 2)));
+        return comprimento;
     }
     
 }

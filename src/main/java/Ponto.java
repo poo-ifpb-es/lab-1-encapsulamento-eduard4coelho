@@ -1,6 +1,7 @@
 public class Ponto{
-    double x;
-    double y;
+
+    public double x;
+    public double y;
 
     public double getX() {
         return x;
@@ -18,7 +19,7 @@ public class Ponto{
         this.x = x;
         this.y = y;
     }
-    public void XY(double x, double y){
+    public void setXY(double x, double y){
         this.x = x;
         this.y = y;
 
